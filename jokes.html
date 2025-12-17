@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crude Joke Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        #joke {
+            font-size: 1.6em;
+            max-width: 900px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="joke">Loading joke...</div>
+
+<script>
+const jokes = [
+    "I put the 'pro' in procrastinate.",
+    "I’m not lazy, I’m on energy-saving mode.",
+    "My brain has too many tabs open.",
+    "I tried exercising, but I kept losing my balance… on the couch.",
+    "I don’t rise and shine. I caffeinate and hope.",
+    "My wallet is like an onion. Opening it makes me cry.",
+    "I thought about cleaning my room. I thought wrong.",
+    "I have a six-pack. It’s just hiding under snacks.",
+    "I started with nothing. I still have most of it.",
+    "I don’t need anger management — I need people management.",
+    "I put the fun in dysfunctional.",
+    "My bed and I are in a very committed relationship.",
+    "I don’t sweat — I sparkle aggressively.",
+    "I eat cake because it’s somebody’s birthday somewhere.",
+    "I used to think I was indecisive, but now I’m not sure.",
+    "My motivation ran away and took my willpower with it.",
+    "I work out… emotionally.",
+    "I came. I saw. I made it awkward.",
+    "I have a degree in overthinking.",
+    "I’m not clumsy — the floor just hates me.",
+    "My diet plan is called ‘see food.’",
+    "I don’t snore. I dream I’m a chainsaw.",
+    "I’m not ignoring you — I’m prioritizing my peace.",
+    "I tried being normal. Worst two minutes ever.",
+    "I don’t need a personal trainer — I need a personal chef.",
+    "I have a strong relationship with sarcasm.",
+    "My spirit animal is a raccoon.",
+    "I whisper ‘what the hell’ at least 20 times a day.",
+    "I have commitment issues with alarms.",
+    "I didn’t trip — I attacked the ground.",
+    "My brain says ‘be productive,’ my body says ‘nah.’",
+    "I’m multitasking: doing nothing while thinking about everything.",
+    "I don’t get enough sleep, but I get enough regrets.",
+    "I tried to be mature today. Didn’t last.",
+    "I don’t need therapy — I need a nap.",
+    "I don’t have a bad attitude. I have a personality.",
+    "I eat stress for breakfast.",
+    "I came here to chew gum and avoid responsibility.",
+    "I have the patience of a microwave.",
+    "I trust my gut — it’s wrong, but confident.",
+    "I’m silently judging everyone, including myself.",
+    "My brain needs a restart button.",
+    "I don’t mean to be late. I just am.",
+    "I run on caffeine and questionable decisions.",
+    "I’m not rude — I’m efficient.",
+    "I don’t argue. I explain why I’m right.",
+    "I’m allergic to mornings.",
+    "My life feels like a group project I didn’t agree to.",
+    "I thought I wanted abs. Turns out I want snacks.",
+    "I didn’t fail. I found another way not to succeed.",
+    "I’m not lazy — I’m conserving energy.",
+    "I came, I saw, I forgot why I was here.",
+    "My brain left the chat.",
+    "I tried to adult today. It was exhausting.",
+    "I don’t need a filter. I need better timing.",
+    "I put off today what I could panic about tomorrow.",
+    "I don’t rise to the occasion. I nap through it.",
+    "I’m not dramatic — I’m expressive.",
+    "I don’t argue with stupid. It drags me down.",
+    "I have the confidence of someone who’s wrong.",
+    "I don’t have bad habits. I have coping mechanisms.",
+    "I tried mindfulness. I got distracted.",
+    "I’m not pessimistic — I’m pre-disappointed.",
+    "I wake up tired and go to bed confused.",
+    "I’m not a morning person or a night owl. I’m a mess.",
+    "I don’t need advice — I need snacks.",
+    "I have selective hearing — especially at work.",
+    "I put effort into avoiding effort.",
+    "I didn’t overreact. I reacted correctly.",
+    "I don’t need luck. I need fewer mistakes.",
+    "I’m not disorganized — I know where things *were*.",
+    "I thrive on chaos and caffeine.",
+    "I didn’t ghost you. I phased out.",
+    "I’m not ignoring responsibilities — they’re ignoring me.",
+    "I have a talent for doing the wrong thing confidently.",
+    "I tried being productive. Didn’t like it.",
+    "I don’t get lost. I explore aggressively.",
+    "I make bad decisions with enthusiasm.",
+    "I’m fueled by coffee and regret.",
+    "I don’t mean to be sarcastic — it’s automatic.",
+    "I didn’t mess up. I created a learning opportunity.",
+    "I have the attention span of a loading bar.",
+    "I’m not late — I’m on my own schedule.",
+    "I’m great at starting things. Finishing is optional.",
+    "I don’t need motivation — I need deadlines.",
+    "I bring chaos wherever I go.",
+    "I didn’t forget. I just remembered too late."
+];
+
+function showJoke() {
+    const joke = jokes[Math.floor(Math.random() * jokes.length)];
+    document.getElementById("joke").textContent = joke;
+}
+
+showJoke();
+setInterval(showJoke, 8000);
+</script>
+
+</body>
+</html>
